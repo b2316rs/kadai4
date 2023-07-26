@@ -1,0 +1,18 @@
+name: Run shell script tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set execute permissions on shell scripts
+      run: chmod +x *.sh
+
+    - name: Run tests
+      run: ./gcd_test.sh
+
