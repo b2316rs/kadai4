@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # 正常な動作の確認
-function test_normal_operation {
     echo "正常な動作のテスト:"
     echo "2と4の最大公約数:"
     ./gcd.sh 2 4
@@ -12,10 +11,9 @@ function test_normal_operation {
         echo "テスト失敗"
         exit 1
     fi
-}
+
 
 # エラーハンドリングの確認
-function test_error_handling {
     echo "エラーハンドリングのテスト:"
     echo "引数が1つだけの場合:"
     ./gcd.sh 15
@@ -76,9 +74,5 @@ function test_error_handling {
         echo "テスト失敗"
         exit 1
     fi
-}
 
-# 各テストを実行
-test_normal_operation
-test_error_handling
 
