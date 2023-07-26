@@ -67,7 +67,7 @@ else
 fi
 echo ""
 
-echo "引数が1以下の場合（0）:"
+echo "引数が0の場合:"
 ./gcd.sh 0 8
 if [ $? -ne 0 ]; then
     echo "テスト成功"
@@ -77,7 +77,7 @@ else
 fi
 echo ""
 
-echo "引数が1以下の場合（1）:"
+echo "引数が1場合:"
 ./gcd.sh 1 8
 if [ $? -eq 0 ]; then
     echo "テスト成功"
